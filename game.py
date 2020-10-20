@@ -83,7 +83,8 @@ a1 a2 ...
 
 zone_name = ''
 description = 'description'
-examination = 'emamien'
+examination = 'examine'
+solved = False
 up = 'up', 'north'
 down = 'down', 'south'
 left = 'left', 'west'
@@ -97,10 +98,163 @@ solved_placed = {'a1': False, 'a2': False, 'a3': False, 'a4': False,
 zonemap = {
     'a1': {
         zone_name: "",
-        description = 'description'
-        examination = 'emamien'
-        up = 'up', 'north'
-        down = 'down', 'south'
-        left = 'left', 'west'
-        right = 'right', 'east'
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
     },
+    'a2': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'a3': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'a4': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'b1': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'b2': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'b3': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'b4': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'c1': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'c2': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'c3': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'c4': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'd1': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'd2': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'd3': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    },
+    'd4': {
+        zone_name: "",
+        description: 'description',
+        examination:'examine',
+        solved: False,
+        up: 'ROOM PLACEHOLDER',
+        down: 'ROOM PLACEHOLDER',
+        left: 'ROOM PLACEHOLDER',
+        right: 'ROOM PLACEHOLDER',
+    }
+}
+
