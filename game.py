@@ -18,6 +18,7 @@ class Player:
         self.hp = 0
         self.mp = 0
         self.status_effects = []
+        self.location = 'start'
 
 myPlayer = Player()
 
@@ -56,15 +57,50 @@ def help_menu():
     print('#################################')
     print('Actions commands type: up, down, right, left, or look')
     print('"look" inspects objects')
-    print('-------Good luck!------')
+    print('------Good luck!-------')
     print('----Share and Enjoy----')
     title_screen_selections()
 
+
+#### Game functionality ####
 def start_game():
+    return "PLACEHOLDER"
 
+#### Map ####
+"""
+-Player starts at b2-
+a1 a2 ...
+---------
+| | | | | a4
+---------
+| | | | | b4 ...
+---------
+| | | | |
+---------
+| | | | |
+---------
+"""
 
+zone_name = ''
+description = 'description'
+examination = 'emamien'
+up = 'up', 'north'
+down = 'down', 'south'
+left = 'left', 'west'
+right = 'right', 'east'
 
+solved_placed = {'a1': False, 'a2': False, 'a3': False, 'a4': False,
+                'b1': False, 'b2': False, 'b3': False, 'b4': False,
+                'c1': False, 'c2': False, 'c3': False, 'c4': False,
+                'd1': False, 'd2': False, 'd3': False, 'd4': False}
 
-
-
-
+zonemap = {
+    'a1': {
+        zone_name: "",
+        description = 'description'
+        examination = 'emamien'
+        up = 'up', 'north'
+        down = 'down', 'south'
+        left = 'left', 'west'
+        right = 'right', 'east'
+    },
