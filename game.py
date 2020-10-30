@@ -55,6 +55,37 @@ def help_menu():
     print('#################################')
     print('####Welcome  to the Text RPG!####')
     print('#################################')
+    print("""                                                                                                  
+                                                                                                    
+                                          `/oyhy+:`                                                 
+                                        .-:`` `./osy+.                                              
+                                     `--`          .so///::--`                                      
+                                  .::-               :+``````.::---.`                               
+                             `:/++:`                  +o`        `/+..----.                         
+                           .++-`         -`       `  o/`+`         :/`  ``-/+/:`                    
+                        -/o/`       .` //` `````..` o:  `+`         `-.      `-+o+-                 
+                   `-:/ods`       ` ss/:---.``     +:    `+           `..`      `.:y+`              
+               .-.-.``.s:      `.:+dMo            `/      `/             `.`       d+y.             
+             -+-`    ./`    `::-+dMMM+            /.       .:              ``     /+ .s`            
+            /:`     --     `s:smMMMMMN.           -.        `-                   `h   -o`           
+           ..     `:.      +-yMMMMMMMMs           .          `-                  //    .+:`         
+                 --       --yMMMMMMMMMN.                      `-                 y`      .o-`       
+                :.      `-/mMMMMMMMMMMM+                       .-                y        :`-`      
+              `+.      -:oNMMMMMMMMMMMMh                        :`               s        `         
+             .+.     `+:sMMMMMMMMMMMMMMm                         +              .-                  
+            :+`  `  -o:hMMMMMMMMMMMMMMMd                         :-             :                   
+          `+/  `./.:o:dMMMMMMMMMMMMMMMMh                          s            ``                   
+         -+.    ``.s`mMMMMMMMMMMMMMMMMMh                          o.                                
+       `::         o NMMMMMMMMMMMMMMMMMy                          :+                                
+      `.`  .////.  s dMMMMMMMMMMMMMMMMMs                          `y                                
+          `/`  .+/:y/oMMMMMMMMMMMMMMMMM/ .+/::-`                   h                                
+          `-.``` `-+m:++oyhmNMMMMMMMMMM.-o`   `.--.` `.:o//`       y                                
+            .-::////:      `-+ydmNNNNMN /         `..-::` .o:      s-``                             
+                                 ``.-:h-.`      `..``       +      //--/+-.                         
+                                      -+:-://:-:::-.``      -       :  /.                           
+                                        ::   `.```.://:-.```        .- `                            
+                                         `                           -.                           
+    """)    
     print('Actions commands type: up, down, right, left, or look')
     print('"look" inspects objects')
     print('------Good luck!-------')
