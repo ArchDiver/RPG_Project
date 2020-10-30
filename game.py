@@ -47,14 +47,7 @@ def title_screen():
     print('#################################')
     print('####Welcome  to the Text RPG!####')
     print('#################################')
-    print('  Choose: Play, Help, or Quit    ')
     print('      Copyright 2020 LSC        ')
-    title_screen_selections()
-
-def help_menu():
-    print('#################################')
-    print('####Welcome  to the Text RPG!####')
-    print('#################################')
     print("""                                                                                                  
                                                                                                     
                                           `/oyhy+:`                                                 
@@ -85,7 +78,15 @@ def help_menu():
                                       -+:-://:-:::-.``      -       :  /.                           
                                         ::   `.```.://:-.```        .- `                            
                                          `                           -.                           
-    """)    
+    """)  
+    print('  Choose: Play, Help, or Quit    ')
+    title_screen_selections()
+
+def help_menu():
+    print('#################################')
+    print('####Welcome  to the Text RPG!####')
+    print('#################################')
+  
     print('Actions commands type: up, down, right, left, or look')
     print('"look" inspects objects')
     print('------Good luck!-------')
@@ -93,9 +94,7 @@ def help_menu():
     title_screen_selections()
 
 
-#### Game functionality ####
-def start_game():
-    return "PLACEHOLDER"
+
 
 #### Map ####
 """
@@ -112,8 +111,8 @@ a1 a2 ...
 ---------
 """
 
-zone_name = ''
-description = 'description'
+ZONENAME = ''
+DESCRIPTION = 'description'
 examination = 'examine'
 solved = False
 up = 'up', 'north'
@@ -128,8 +127,8 @@ solved_placed = {'a1': False, 'a2': False, 'a3': False, 'a4': False,
 
 zonemap = {
     'a1': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: '',
@@ -138,8 +137,8 @@ zonemap = {
         right: 'a2',
     },
     'a2': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: '',
@@ -148,8 +147,8 @@ zonemap = {
         right: 'a3',
     },
     'a3': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: '',
@@ -158,8 +157,8 @@ zonemap = {
         right: 'a4',
     },
     'a4': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: '',
@@ -168,8 +167,8 @@ zonemap = {
         right: '',
     },
     'b1': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'a1',
@@ -178,8 +177,8 @@ zonemap = {
         right: 'b3',
     },
     'b2': {
-        zone_name: "",
-        description: 'You have entered the cave.',
+        ZONENAME: "",
+        DESCRIPTION: 'You have entered the cave.',
         examination:'It is dark but thanks to the light coming from the outside you can see that this area is...safe.',
         solved: False,
         up: 'a2',
@@ -188,8 +187,8 @@ zonemap = {
         right: 'b3',
     },
     'b3': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'a3',
@@ -198,8 +197,8 @@ zonemap = {
         right: 'b4',
     },
     'b4': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'a4',
@@ -208,8 +207,8 @@ zonemap = {
         right: '',
     },
     'c1': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'b1',
@@ -218,8 +217,8 @@ zonemap = {
         right: '',
     },
     'c2': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'b2',
@@ -228,8 +227,8 @@ zonemap = {
         right: 'c3',
     },
     'c3': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'b3',
@@ -238,8 +237,8 @@ zonemap = {
         right: 'c4',
     },
     'c4': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'b4',
@@ -248,8 +247,8 @@ zonemap = {
         right: '',
     },
     'd1': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'c1',
@@ -258,8 +257,8 @@ zonemap = {
         right: 'd2',
     },
     'd2': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'c2',
@@ -268,8 +267,8 @@ zonemap = {
         right: 'd3',
     },
     'd3': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'c3',
@@ -278,8 +277,8 @@ zonemap = {
         right: 'd4',
     },
     'd4': {
-        zone_name: "",
-        description: 'description',
+        ZONENAME: "",
+        DESCRIPTION: 'description',
         examination:'examine',
         solved: False,
         up: 'c4',
@@ -289,3 +288,34 @@ zonemap = {
     }
 }
 
+##### Game Interactivity ######
+def print_location():
+    print('\n' + ('#' * (4 + len(myPlayer.location))))
+    print('# ' + myPlayer.location.upper() + ' #')
+    print('# ' + zonemap[myPlayer.location][DESCRIPTION] + ' #')
+    print('\n' + ('#' * (4 + len(myPlayer.location))))
+
+def prompt():
+    print('\n' + "============================")
+    print("What would you like to do?")
+    action = input("> ")
+    acceptable_actions = ['move', 'go', 'travel', 'walk', 'quit', 'examine', 'inspect', 'look']
+    while action.lower() not in acceptable_actions:
+        print("Choose from 'move', 'go', 'travel', 'walk', 'quit', 'examine', 'inspect', 'look'.")
+        action = input("> ")
+    if action.lower() == 'quit':
+        sys.exit()
+    elif action.lower() in ['move', 'go', 'travel', 'walk']:
+        player_move(action.lower())
+    elif action.lower() in ['examine', 'inspect', 'look']:
+        playwer_examine(action.lower())
+def player_move(myAction):
+    ask = input("Where would you like to move to?\n")
+    dest = input(ask)
+    if dest == 
+
+
+
+#### Game functionality ####
+def start_game():
+    return "PLACEHOLDER"
