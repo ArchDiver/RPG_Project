@@ -15,86 +15,15 @@ screen_width = 100
 class Player:
     def __init__(self):
         self.name = ''
+        self.feeling = ''
+        self.feeling = ''
+        self.asrtology = ''
         self.hp = 0
         self.mp = 0
         self.status_effects = []
         self.location = 'start'
 
 myPlayer = Player()
-
-#### Title Screen ####
-
-def title_screen_selections():
-    option = input("> ")
-    if option.lower == ("play"):
-        start_game() # placeholder until written
-    elif option.lower == ("help"):
-        help_menu()
-    elif option.lower == ("quit"):
-        sys.exit()
-    while option.lower() not in ['play', 'help', 'quit']:
-        option = input("> ")
-        if option.lower == ("play"):
-            start_game() # placeholder until written
-        elif option.lower == ("help"):
-            help_menu()
-        elif option.lower == ("quit"):
-            sys.exit()
-        else:
-            print("Please enter a valid command.")
-def title_screen():
-    os.system('clear')
-    print('#################################')
-    print('####Welcome  to the Text RPG!####')
-    print('#################################')
-    print('      Copyright 2020 LSC        ')
-    print("""                                                                                                  
-                                                                                                    
-                                          `/oyhy+:`                                                 
-                                        .-:`` `./osy+.                                              
-                                     `--`          .so///::--`                                      
-                                  .::-               :+``````.::---.`                               
-                             `:/++:`                  +o`        `/+..----.                         
-                           .++-`         -`       `  o/`+`         :/`  ``-/+/:`                    
-                        -/o/`       .` //` `````..` o:  `+`         `-.      `-+o+-                 
-                   `-:/ods`       ` ss/:---.``     +:    `+           `..`      `.:y+`              
-               .-.-.``.s:      `.:+dMo            `/      `/             `.`       d+y.             
-             -+-`    ./`    `::-+dMMM+            /.       .:              ``     /+ .s`            
-            /:`     --     `s:smMMMMMN.           -.        `-                   `h   -o`           
-           ..     `:.      +-yMMMMMMMMs           .          `-                  //    .+:`         
-                 --       --yMMMMMMMMMN.                      `-                 y`      .o-`       
-                :.      `-/mMMMMMMMMMMM+                       .-                y        :`-`      
-              `+.      -:oNMMMMMMMMMMMMh                        :`               s        `         
-             .+.     `+:sMMMMMMMMMMMMMMm                         +              .-                  
-            :+`  `  -o:hMMMMMMMMMMMMMMMd                         :-             :                   
-          `+/  `./.:o:dMMMMMMMMMMMMMMMMh                          s            ``                   
-         -+.    ``.s`mMMMMMMMMMMMMMMMMMh                          o.                                
-       `::         o NMMMMMMMMMMMMMMMMMy                          :+                                
-      `.`  .////.  s dMMMMMMMMMMMMMMMMMs                          `y                                
-          `/`  .+/:y/oMMMMMMMMMMMMMMMMM/ .+/::-`                   h                                
-          `-.``` `-+m:++oyhmNMMMMMMMMMM.-o`   `.--.` `.:o//`       y                                
-            .-::////:      `-+ydmNNNNMN /         `..-::` .o:      s-``                             
-                                 ``.-:h-.`      `..``       +      //--/+-.                         
-                                      -+:-://:-:::-.``      -       :  /.                           
-                                        ::   `.```.://:-.```        .- `                            
-                                         `                           -.                           
-    """)  
-    print('  Choose: Play, Help, or Quit    ')
-    title_screen_selections()
-
-def help_menu():
-    print('#################################')
-    print('####Welcome  to the Text RPG!####')
-    print('#################################')
-  
-    print('Actions commands type: up, down, right, left, or look')
-    print('"look" inspects objects')
-    print('------Good luck!-------')
-    print('----Share and Enjoy----')
-    title_screen_selections()
-
-
-
 
 #### Map ####
 """
@@ -287,6 +216,82 @@ zonemap = {
         right: '',
     }
 }
+
+#### Title Screen ####
+
+def title_screen_selections():
+    option = input("> ")
+    if option.lower == ("play"):
+        start_game() # placeholder until written
+    elif option.lower == ("help"):
+        help_menu()
+    elif option.lower == ("quit"):
+        sys.exit()
+    while option.lower() not in ['play', 'help', 'quit']:
+        option = input("> ")
+        if option.lower == ("play"):
+            start_game() # placeholder until written
+        elif option.lower == ("help"):
+            help_menu()
+        elif option.lower == ("quit"):
+            sys.exit()
+        else:
+            print("Please enter a valid command.")
+def title_screen():
+    os.system('clear')
+    print('#################################')
+    print('####Welcome  to the Text RPG!####')
+    print('#################################')
+    print('      Copyright 2020 LSC        ')
+    print("""                                                                                                  
+                                                                                                    
+                                          `/oyhy+:`                                                 
+                                        .-:`` `./osy+.                                              
+                                     `--`          .so///::--`                                      
+                                  .::-               :+``````.::---.`                               
+                             `:/++:`                  +o`        `/+..----.                         
+                           .++-`         -`       `  o/`+`         :/`  ``-/+/:`                    
+                        -/o/`       .` //` `````..` o:  `+`         `-.      `-+o+-                 
+                   `-:/ods`       ` ss/:---.``     +:    `+           `..`      `.:y+`              
+               .-.-.``.s:      `.:+dMo            `/      `/             `.`       d+y.             
+             -+-`    ./`    `::-+dMMM+            /.       .:              ``     /+ .s`            
+            /:`     --     `s:smMMMMMN.           -.        `-                   `h   -o`           
+           ..     `:.      +-yMMMMMMMMs           .          `-                  //    .+:`         
+                 --       --yMMMMMMMMMN.                      `-                 y`      .o-`       
+                :.      `-/mMMMMMMMMMMM+                       .-                y        :`-`      
+              `+.      -:oNMMMMMMMMMMMMh                        :`               s        `         
+             .+.     `+:sMMMMMMMMMMMMMMm                         +              .-                  
+            :+`  `  -o:hMMMMMMMMMMMMMMMd                         :-             :                   
+          `+/  `./.:o:dMMMMMMMMMMMMMMMMh                          s            ``                   
+         -+.    ``.s`mMMMMMMMMMMMMMMMMMh                          o.                                
+       `::         o NMMMMMMMMMMMMMMMMMy                          :+                                
+      `.`  .////.  s dMMMMMMMMMMMMMMMMMs                          `y                                
+          `/`  .+/:y/oMMMMMMMMMMMMMMMMM/ .+/::-`                   h                                
+          `-.``` `-+m:++oyhmNMMMMMMMMMM.-o`   `.--.` `.:o//`       y                                
+            .-::////:      `-+ydmNNNNMN /         `..-::` .o:      s-``                             
+                                 ``.-:h-.`      `..``       +      //--/+-.                         
+                                      -+:-://:-:::-.``      -       :  /.                           
+                                        ::   `.```.://:-.```        .- `                            
+                                         `                           -.                           
+    """)  
+    print('  Choose: Play, Help, or Quit    ')
+    title_screen_selections()
+
+def help_menu():
+    print('#################################')
+    print('####Welcome  to the Text RPG!####')
+    print('#################################')
+  
+    print('Actions commands type: up, down, right, left, or look')
+    print('"look" inspects objects')
+    print('------Good luck!-------')
+    print('----Share and Enjoy----')
+    title_screen_selections()
+
+
+
+
+
 
 ##### Game Interactivity ######
 def print_location():
