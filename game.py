@@ -45,6 +45,8 @@ a1 a2 ...
 ZONENAME = ''
 DESCRIPTION = 'description'
 examination = 'examine'
+info = 'info'
+puzzle = = 'puzzle'
 solved = False
 up = 'up', 'north'
 down = 'down', 'south'
@@ -61,6 +63,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle = = 'puzzle'
         solved: False,
         up: '',
         down: 'b1',
@@ -71,6 +74,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: '',
         down: 'b2',
@@ -81,6 +85,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: '',
         down: 'b2',
@@ -91,6 +96,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: '',
         down: 'b4',
@@ -101,6 +107,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'a1',
         down: 'c1',
@@ -121,6 +128,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'a3',
         down: 'c3',
@@ -131,6 +139,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'a4',
         down: 'c4',
@@ -141,6 +150,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'b1',
         down: 'd1',
@@ -151,6 +161,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'b2',
         down: 'd2',
@@ -161,6 +172,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'b3',
         down: 'd3',
@@ -171,6 +183,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'b4',
         down: 'd4',
@@ -181,6 +194,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'c1',
         down: '',
@@ -191,6 +205,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'c2',
         down: '',
@@ -201,6 +216,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'c3',
         down: '',
@@ -211,6 +227,7 @@ zonemap = {
         ZONENAME: "",
         DESCRIPTION: 'description',
         examination:'examine',
+        puzzle: 'puzzle',
         solved: False,
         up: 'c4',
         down: '',
