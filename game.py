@@ -22,6 +22,8 @@ class Player:
         self.mp = 0
         self.status_effects = []
         self.location = 'start'
+        self.won = False
+        self.solves = 0
 
 myPlayer = Player()
 
