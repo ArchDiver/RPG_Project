@@ -305,6 +305,7 @@ def help_menu():
     print('"look" inspects objects')
     print('------Good luck!-------')
     print('----Share and Enjoy----')
+    print('----By Leland Crawford----')
     title_screen_selections()
 
 
