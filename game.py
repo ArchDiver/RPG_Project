@@ -338,8 +338,22 @@ def prompt():
         playwer_examine(action.lower())
 def player_move(myAction):
     ask = input("Where would you like to move to?\n")
-    dest = input(ask)
-    if dest == 
+    destination = input(ask)
+    	if destination == 'up':
+		move_dest = cube[player1.position][SIDE_UP] #if you are on ground, should say north
+		move_player(move_dest)
+	elif destination == 'left':
+		move_dest = cube[player1.position][SIDE_LEFT]
+		move_player(move_dest)
+	elif destination == 'right':
+		move_dest = cube[player1.position][SIDE_RIGHT]
+		move_player(move_dest)
+	elif destination == 'down':
+		move_dest = cube[player1.position][SIDE_DOWN]
+		move_player(move_dest)
+	else:
+		print("Invalid direction command, try using forward, back, left, or right.\n")
+		move(myAction)
 
 
 
