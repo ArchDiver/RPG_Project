@@ -333,10 +333,11 @@ def prompt():
     if action.lower() == 'quit':
         sys.exit()
     elif action.lower() in ['move', 'go', 'travel', 'walk']:
-        player_move(action.lower())
+        move(action.lower())
     elif action.lower() in ['examine', 'inspect', 'look']:
         playwer_examine(action.lower())
-def player_move(myAction):
+
+def move(myAction):
     ask = input("Where would you like to move to?\n")
     destination = input(ask)
     	if destination == 'up':
@@ -354,6 +355,11 @@ def player_move(myAction):
 	else:
 		print("Invalid direction command, try using forward, back, left, or right.\n")
 		move(myAction)
+
+def move_player(move_dest):
+    print("\nYou have moved to the " + move_dest + ".")
+	player1.position = move_dest
+	print_location()
 
 
 
