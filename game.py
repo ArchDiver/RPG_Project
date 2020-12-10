@@ -321,6 +321,9 @@ def print_location():
     print('\n' + ('#' * (4 + len(myPlayer.location))))
 
 def prompt():
+    if myPlayer.solves == 5:
+        print('\n' + ('#' * (4 + len(myPlayer.location))))
+        print
     print('\n' + "============================")
     print("What would you like to do?")
     action = input("> ")
