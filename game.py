@@ -361,6 +361,15 @@ def move_player(move_dest):
 	player1.position = move_dest
 	print_location()
 
+def examine():
+	if room_solved[player1.position] == False:
+		print('\n' + (cube[player1.position][INFO]))
+		print((cube[player1.position][PUZZLE]))
+		puzzle_answer = input("> ")
+		checkpuzzle(puzzle_answer)
+	else:
+		print("There is nothing new for you to see here.")
+
 
 
 #### Game functionality ####
