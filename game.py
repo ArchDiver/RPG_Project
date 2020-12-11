@@ -428,4 +428,13 @@ def setup_game():
 		sys.stdout.flush()
 		time.sleep(0.05)
 	player_name = input("> ")
-	player1.name = player_name
+	myPlayer.name = player_name
+
+    #QUESTION FEELING: Obtains the player's feeling.
+	question2 = "My dear friend " + myPlayer.name + ", how are you feeling?\n"
+	for character in question2:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
+	feeling = input("> ")
+	myPlayer.feeling = feeling.lower()
