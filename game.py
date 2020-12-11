@@ -372,6 +372,14 @@ def examine():
 
 def checkpuzzle(puzzle_answer):
 	if player1.position == 'ground':
+        if player1.solves >= 5:
+			endspeech = ("Without you having done anything, the key begins to rotate.\nIt begins to rain.\nAll of the sides of the box begin to crumble inwards.\nLight begins to shine through the cracks in the walls.\nA blinding flash of light hits you.\nYou have escaped!")
+			for character in endspeech:
+				sys.stdout.write(character)
+				sys.stdout.flush()
+				time.sleep(0.05)
+			print("\nCONGRATULATIONS!")
+			sys.exit()
 
 
 
