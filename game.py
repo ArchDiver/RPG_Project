@@ -400,6 +400,12 @@ def checkpuzzle(puzzle_answer):
 		else:
 			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
 			examine()
+            
+def main_game_loop():
+	total_puzzles = 6
+	while player1.won is False:
+		#print_location()
+		prompt()
 
 
 
