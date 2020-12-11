@@ -471,3 +471,5 @@ def setup_game():
     #Prints the astrological sign guide for the player.  Also converts text to be case-insensitive, as with most inputs.
     print("#####################################################")
 	print("# Please print the proper name to indicate your sign.")
+    print("# ♈ Aries (The Ram)")
+	print("# ♉ Taurus (The Bull)")
