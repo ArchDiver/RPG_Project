@@ -460,3 +460,9 @@ def setup_game():
 		sys.stdout.write(character)
 		sys.stdout.flush()
 		time.sleep(0.05)
+    #QUESTION SIGN: Obtains the player's astrological sign for a later puzzle.
+	question4 = "Now tell me, what is your astrological sign?\n"
+	for character in question4:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
