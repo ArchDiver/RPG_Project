@@ -481,3 +481,5 @@ def setup_game():
 	print("# ♏ Scorpio (The Scorpion)")
     print("# ♐ Sagittarius (Centaur)")
 	print("# ♑ Capricorn (The Goat)")
+    print("# ♒ Aquarius (The Water Bearer)")
+	print("# ♓ Pisces (The Fish)")
