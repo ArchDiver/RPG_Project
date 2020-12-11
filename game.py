@@ -382,6 +382,15 @@ def checkpuzzle(puzzle_answer):
 			sys.exit()
         else:
 			print("Nothing seems to happen still...")
+    elif player1.position == 'south':
+		if puzzle_answer == (player1.astrological):
+			room_solved[player1.position] = True
+			player1.solves += 1
+			print("You have solved the puzzle. Onwards!")
+			print("\nPuzzles solved: " + str(player1.solves))
+		else:
+			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
+			examine()
 
 
 
