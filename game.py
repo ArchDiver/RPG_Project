@@ -477,3 +477,5 @@ def setup_game():
 	print("# ♋ Cancer (The Crab)")
     print("# ♌ Leo (The Lion)")
 	print("# ♍ Virgo (The Virgin)")
+    print("# ♎ Libra (The Scales)")
+	print("# ♏ Scorpio (The Scorpion)")
