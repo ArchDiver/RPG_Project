@@ -483,3 +483,8 @@ def setup_game():
 	print("# ♑ Capricorn (The Goat)")
     print("# ♒ Aquarius (The Water Bearer)")
 	print("# ♓ Pisces (The Fish)")
+    print("#####################################################")
+	astrological = input("> ")
+	acceptable_signs = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
+	#Forces the player to write an acceptable sign, as this is essential to solving a puzzle later.  Also stores it in class.
+    
