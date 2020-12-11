@@ -488,3 +488,7 @@ def setup_game():
 	acceptable_signs = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
 	#Forces the player to write an acceptable sign, as this is essential to solving a puzzle later.  Also stores it in class.
     
+    while astrological.lower() not in acceptable_signs:
+		print("That is not an acceptable sign, please try again.")
+		astrological = input("> ")
+	player1.astrological = astrological.lower()
