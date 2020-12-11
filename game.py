@@ -335,22 +335,22 @@ def prompt():
     elif action.lower() in ['move', 'go', 'travel', 'walk']:
         move(action.lower())
     elif action.lower() in ['examine', 'inspect', 'look']:
-        playwer_examine(action.lower())
+        player_examine(action.lower())
 
 def move(myAction):
     ask = input("Where would you like to move to?\n")
     destination = input(ask)
     	if destination == 'up':
-		move_dest = cube[player1.position][SIDE_UP] #if you are on ground, should say north
+		move_dest = cube[myPlayer.position][SIDE_UP] #if you are on ground, should say north
 		move_player(move_dest)
 	elif destination == 'left':
-		move_dest = cube[player1.position][SIDE_LEFT]
+		move_dest = cube[myPlayer.position][SIDE_LEFT]
 		move_player(move_dest)
 	elif destination == 'right':
-		move_dest = cube[player1.position][SIDE_RIGHT]
+		move_dest = cube[myPlayer.position][SIDE_RIGHT]
 		move_player(move_dest)
 	elif destination == 'down':
-		move_dest = cube[player1.position][SIDE_DOWN]
+		move_dest = cube[myPlayer.position][SIDE_DOWN]
 		move_player(move_dest)
 	else:
 		print("Invalid direction command, try using forward, back, left, or right.\n")
@@ -358,21 +358,21 @@ def move(myAction):
 
 def move_player(move_dest):
     print("\nYou have moved to the " + move_dest + ".")
-	player1.position = move_dest
+	myPlayer.position = move_dest
 	print_location()
 
 def examine():
-	if room_solved[player1.position] == False:
-		print('\n' + (cube[player1.position][INFO]))
-		print((cube[player1.position][PUZZLE]))
+	if room_solved[myPlayer.position] == False:
+		print('\n' + (cube[myPlayer.position][INFO]))
+		print((cube[myPlayer.position][PUZZLE]))
 		puzzle_answer = input("> ")
 		checkpuzzle(puzzle_answer)
 	else:
 		print("There is nothing new for you to see here.")
 
 def checkpuzzle(puzzle_answer):
-	if player1.position == 'ground':
-        if player1.solves >= 5:
+	if myPlayer.position == 'ground':
+        if myPlayer.solves >= 5:
 			endspeech = ("Without you having done anything, the key begins to rotate.\nIt begins to rain.\nAll of the sides of the box begin to crumble inwards.\nLight begins to shine through the cracks in the walls.\nA blinding flash of light hits you.\nYou have escaped!")
 			for character in endspeech:
 				sys.stdout.write(character)
@@ -382,28 +382,28 @@ def checkpuzzle(puzzle_answer):
 			sys.exit()
         else:
 			print("Nothing seems to happen still...")
-    elif player1.position == 'south':
-		if puzzle_answer == (player1.astrological):
-			room_solved[player1.position] = True
-			player1.solves += 1
+    elif myPlayer.position == 'south':
+		if puzzle_answer == (myPlayer.astrological):
+			room_solved[myPlayer.position] = True
+			myPlayer.solves += 1
 			print("You have solved the puzzle. Onwards!")
-			print("\nPuzzles solved: " + str(player1.solves))
+			print("\nPuzzles solved: " + str(myPlayer.solves))
 		else:
 			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
 			examine()
     else:
-		if puzzle_answer == (cube[player1.position][SOLVED]):
-			room_solved[player1.position] = True
-			player1.solves += 1
+		if puzzle_answer == (cube[myPlayer.position][SOLVED]):
+			room_solved[myPlayer.position] = True
+			myPlayer.solves += 1
 			print("You have solved the puzzle. Onwards!")
-			print("\nPuzzles solved: " + str(player1.solves))
+			print("\nPuzzles solved: " + str(myPlayer.solves))
 		else:
 			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
 			examine()
-            
+
 def main_game_loop():
 	total_puzzles = 6
-	while player1.won is False:
+	while myPlayer.won is False:
 		#print_location()
 		prompt()
 
@@ -412,3 +412,20 @@ def main_game_loop():
 #### Game functionality ####
 def start_game():
     return "PLACEHOLDER"
+
+################
+# Execute Game #
+################
+def setup_game():
+	#Clears the terminal for the game to start.
+	os.system('clear')
+
+	#QUESTION NAME: Obtains the player's name.
+	question1 = "Hello there, what is your name?\n"
+	for character in question1:
+		#This will occur throughout the intro code.  It allows the string to be typed gradually - like a typerwriter effect.
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
+	player_name = input("> ")
+	player1.name = player_name
