@@ -453,3 +453,10 @@ def setup_game():
 		feeling_string = "I am sorry to hear you feel"
 	else:
 		feeling_string = "I do not know what it is like to feel"
+    
+    #Combines all the above parts.
+	question3 = "Well then, " + player1.name + ", " + feeling_string + " " + player1.feeling + ".\n"
+	for character in question3:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
