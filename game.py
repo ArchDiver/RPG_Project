@@ -473,3 +473,5 @@ def setup_game():
 	print("# Please print the proper name to indicate your sign.")
     print("# ♈ Aries (The Ram)")
 	print("# ♉ Taurus (The Bull)")
+    print("# ♊ Gemini (The Twins)")
+	print("# ♋ Cancer (The Crab)")
