@@ -380,6 +380,8 @@ def checkpuzzle(puzzle_answer):
 				time.sleep(0.05)
 			print("\nCONGRATULATIONS!")
 			sys.exit()
+        else:
+			print("Nothing seems to happen still...")
 
 
 
