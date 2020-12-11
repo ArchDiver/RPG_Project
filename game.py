@@ -466,3 +466,5 @@ def setup_game():
 		sys.stdout.write(character)
 		sys.stdout.flush()
 		time.sleep(0.05)
+
+    #Prints the astrological sign guide for the player.  Also converts text to be case-insensitive, as with most inputs.
