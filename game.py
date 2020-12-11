@@ -370,6 +370,9 @@ def examine():
 	else:
 		print("There is nothing new for you to see here.")
 
+def checkpuzzle(puzzle_answer):
+	if player1.position == 'ground':
+
 
 
 #### Game functionality ####
