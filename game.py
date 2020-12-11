@@ -391,6 +391,15 @@ def checkpuzzle(puzzle_answer):
 		else:
 			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
 			examine()
+    else:
+		if puzzle_answer == (cube[player1.position][SOLVED]):
+			room_solved[player1.position] = True
+			player1.solves += 1
+			print("You have solved the puzzle. Onwards!")
+			print("\nPuzzles solved: " + str(player1.solves))
+		else:
+			print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
+			examine()
 
 
 
