@@ -530,3 +530,5 @@ def setup_game():
     print("Every inside face of the box seems to have a different theme.\nHow can you get out of this...\n")
     print("You notice objects standing sideways on the walls.\nDoes gravity not apply? There are clouds though...")
     main_game_loop()
+
+title_screen()
