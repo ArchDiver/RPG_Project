@@ -496,3 +496,5 @@ def setup_game():
     #Leads the player into the cube puzzle now!
 	speech1 = "Ah, " + player1.astrological + ", how interesting.  Well then.\n"
 	speech2 = "It seems this is where we must part, " + player1.name + ".\n"
+    speech3 = "How unfortunate.\n"  
+	speech4 = "Oh, you don't know where you are?  Well...\n"
