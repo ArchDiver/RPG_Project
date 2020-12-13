@@ -517,3 +517,5 @@ def setup_game():
 		sys.stdout.write(character)
         sys.stdout.flush()
 		time.sleep(0.05)
+    for character in speech5:
+		sys.stdout.write(character)
