@@ -523,3 +523,4 @@ def setup_game():
 		time.sleep(0.05)
 
     os.system('clear')
+    print("################################")
