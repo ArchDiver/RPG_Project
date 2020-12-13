@@ -526,4 +526,5 @@ def setup_game():
     print("################################")
     print("# Here begins the adventure... #")
     print("################################\n")
-    print("You find yourself in the center of a strange place.\nSeems like you are trapped in a little box.\n")
+    print("You find yourself in the center of a strange place.\nSeems like you are trapped in a little box.\n"
+    print("Every inside face of the box seems to have a different theme.\nHow can you get out of this...\n")
