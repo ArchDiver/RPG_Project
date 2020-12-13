@@ -492,3 +492,7 @@ def setup_game():
 		print("That is not an acceptable sign, please try again.")
 		astrological = input("> ")
 	player1.astrological = astrological.lower()
+
+    #Leads the player into the cube puzzle now!
+	speech1 = "Ah, " + player1.astrological + ", how interesting.  Well then.\n"
+	speech2 = "It seems this is where we must part, " + player1.name + ".\n"
