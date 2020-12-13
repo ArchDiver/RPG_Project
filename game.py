@@ -498,3 +498,5 @@ def setup_game():
 	speech2 = "It seems this is where we must part, " + player1.name + ".\n"
     speech3 = "How unfortunate.\n"  
 	speech4 = "Oh, you don't know where you are?  Well...\n"
+    speech5 = "Luckily, I've left you in a little puzzle.  Hopefully you can escape this box.\n"
+	speech6 = "Heh. Heh.. Heh...\n"
