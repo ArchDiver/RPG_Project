@@ -524,3 +524,4 @@ def setup_game():
 
     os.system('clear')
     print("################################")
+    print("# Here begins the adventure... #")
