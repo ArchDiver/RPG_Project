@@ -521,3 +521,5 @@ def setup_game():
 		sys.stdout.write(character)
         sys.stdout.flush()
 		time.sleep(0.05)
+
+    os.system('clear')
