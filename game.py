@@ -528,3 +528,4 @@ def setup_game():
     print("################################\n")
     print("You find yourself in the center of a strange place.\nSeems like you are trapped in a little box.\n"
     print("Every inside face of the box seems to have a different theme.\nHow can you get out of this...\n")
+    print("You notice objects standing sideways on the walls.\nDoes gravity not apply? There are clouds though...")
