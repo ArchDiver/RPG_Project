@@ -500,3 +500,6 @@ def setup_game():
 	speech4 = "Oh, you don't know where you are?  Well...\n"
     speech5 = "Luckily, I've left you in a little puzzle.  Hopefully you can escape this box.\n"
 	speech6 = "Heh. Heh.. Heh...\n"
+
+    for character in speech1:
+		sys.stdout.write(character)
